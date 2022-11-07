@@ -1,2 +1,8 @@
 # ZF_Internship
-A description of the projects and tasks I did during my 6-month internship at ZF
+A description of the projects and tasks I did during my 6-month internship at ZF, a German car manufacturer and parts supplier company.
+THE REASON I HAVE NOT UPLOADED THE CODE FOR ANY OF THESE PROJECTS IS MY ETHICAL OBLIGATION TO NOT SHARE PRIVATE INFORMATION RELATED TO THE COMPANY OR THE PROJECTS THAT IT PURSUES.
+## 1. Post processing check application 
+Simulations done in PERMAS software generate large text files, that need to be checked for errors or anomalies in the simulation results. I created a python script that would open a GUI, where the user could upload the file/s that need to be checked, along with an option to select the type of transmission and forces or moments that the user wants to apply on the model to verify its integrity. It would return the status of these checks, which could be saved by the user into another text file for future reference.
+
+## 2. Coefficient of Friction Calculation
+Models in simulation software like PERMAS involve individual engine parts with a large number of bolts. At these bolt locations, there is a need to calculate average coefficient of friction values, from the normal and shear force at all the nodes. However, the information on normal, shear and pre tension forces on bolts of various parts are scattered in various text files. All this needs to be consolidated into excel sheets ,and then unified into a single sheet. I created a Python based application, that would accept the folder containing all the post processing files. It would segregate them into seperate folders and generate a single excel file with all the required spreasheets.
